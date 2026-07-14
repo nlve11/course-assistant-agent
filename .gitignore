@@ -1,0 +1,15 @@
+﻿.env
+__pycache__/
+*.pyc
+.pytest_cache/
+logs/
+screenshots12/
+*.docx
+gen_report*.py
+gen_screenshots*.py
+.venv/
+venv/
+env/
+pytest-cache-files-*/
+.DS_Store
+Thumbs.db

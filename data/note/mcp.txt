@@ -1,0 +1,9 @@
+MCP（Model Context Protocol）是模型上下文协议，用于标准化 AI 工具接口。
+核心概念：工具名称、能力描述、输入参数、输出结构、失败语义、安全边界。
+MCP 风格工具契约示例：
+  工具名：search_notes
+  用途：检索本地课程笔记
+  输入：{"query": "字符串", "top_k": "1-5 整数"}
+  输出：{"items": [{"title": "字符串", "snippet": "字符串", "source": "字符串"}]}
+  失败：validation_error（参数错误）/ knowledge_base_missing（资料库缺失）
+  安全：只读取 data/note 目录
